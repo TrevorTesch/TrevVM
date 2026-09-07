@@ -1,3 +1,5 @@
+set -e
+
 git clone https://github.com/TrevorTesch/TrevVM
 cd TrevVM
 pip install textual

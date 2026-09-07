@@ -18,6 +18,7 @@ COPY /root/ /
 RUN \
   echo "**** install packages ****" && \
   add-apt-repository -y ppa:mozillateam/ppa && \
+  rm -f /etc/apt/sources.list.d/nodesource.list && \
   apt-get update && \
   DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y firefox jq wget && \
   chmod +x /install-de.sh && \
@@ -40,3 +41,4 @@ RUN \
 # ports and volumes
 EXPOSE 3000
 VOLUME /config
+

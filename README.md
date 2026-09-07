@@ -9,5 +9,5 @@ chmod +x install.sh
 ```
 ## I get it...
 
-The original person who made this made it broken. Not finished. I recommend forking this repo and make a codespaces there. If broken and doesn't work open a issue. Try using the copilot first.
+The original person who made this made it broken. Not finished. I recommend forking this repo and make a codespaces there. If broken and doesn't work open a issue. Try using the copilot ai in the codespace first.
 Just say: The vm doesn't work help please.

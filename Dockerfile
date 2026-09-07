@@ -8,7 +8,7 @@ LABEL maintainer="mollomm1"
 
 ARG DEBIAN_FRONTEND="noninteractive"
 
-# prevent Ubuntu's firefox stub from being installed
+# prevent Ubuntu's firefoxs stub from being installed
 COPY /root/etc/apt/preferences.d/firefox-no-snap /etc/apt/preferences.d/firefox-no-snap
 
 COPY options.json /

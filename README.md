@@ -11,3 +11,6 @@ chmod +x install.sh
 
 The original person who made this made it broken. Not finished. I recommend forking this repo and make a codespaces there. If broken and doesn't work open a issue. Try using the copilot ai in the codespace first.
 Just say: The vm doesn't work help me please.
+
+## Q&A
+When you successfully run the vm, yes you can install windows files. You can run .exe (ex. install fortnite, obs to stream, etc).

@@ -1,3 +1,4 @@
+import json
 from textual.app import App, ComposeResult
 from textual.screen import Screen
 from textual.containers import Horizontal, Vertical
@@ -5,9 +6,9 @@ from textual.widgets import Footer, Header, SelectionList, Label, Button, Markdo
 
 ### JSON Exporter ###
 
-def savejson(json):
-    with open('options.json', 'w') as f:
-        f.write(str(json).replace("'", '"').replace("True", "true").replace("False", "false"))
+def savejson(data):
+    with open('options.json', 'w', encoding='utf-8') as f:
+        json.dump(data, f, separators=(',', ':'))
 
 #####################
 
@@ -41,43 +42,43 @@ class InstallScreen(Screen):
         Vertical (
          Label("Default Apps (you should keep them)"),
          SelectionList[int]( 
-            ("Wine", 0, True),
-            ("Chrome", 1, True),
-            ("Xarchiver", 2, True),
-            ("Discord", 3, True),
-            ("Steam", 4, True),
-            ("Minecraft", 5, True),
-            id="defaultapps"
-        ),),
+             ("Wine", 0, True),
+             ("Chrome", 1, True),
+             ("Xarchiver", 2, True),
+             ("Discord", 3, True),
+             ("Steam", 4, True),
+             ("Minecraft", 5, True),
+             id="defaultapps"
+         ),),
         Vertical (
          Label("Programming"),
          SelectionList[int]( 
-            ("OpenJDK 8 (jre)", 0),
-            ("OpenJDK 17 (jre)", 1),
-            ("VSCodium", 2),
-            id="programming"
-        ),),
+             ("OpenJDK 8 (jre)", 0),
+             ("OpenJDK 17 (jre)", 1),
+             ("VSCodium", 2),
+             id="programming"
+         ),),
         Vertical (
          Label("Apps"),
          SelectionList[int]( 
-            ("VLC", 0),
-            ("LibreOffice", 1),
-            ("Synaptic", 2),
-            ("AQemu (VMs)", 3),
-            ("TLauncher", 4),
-            id="apps"
-        ),),
-        )
+             ("VLC", 0),
+             ("LibreOffice", 1),
+             ("Synaptic", 2),
+             ("AQemu (VMs)", 3),
+             ("TLauncher", 4),
+             id="apps"
+         ),),
+         )
 
         yield Vertical (
          Horizontal(
-            Label("\nDesktop Environement :"),
-            Select(id="de", value="KDE Plasma (Heavy)", options=((line, line) for line in LINES)),
-        ),)
+             Label("\nDesktop Environement :"),
+             Select(id="de", value="KDE Plasma (Heavy)", options=((line, line) for line in LINES)),
+         ),)
         yield Horizontal (
-            Button.error("Back", id="back"),
-            Button.warning("Install NOW", id="in"),
-        )
+             Button.error("Back", id="back"),
+             Button.warning("Install NOW", id="in"),
+         )
     def on_button_pressed(self, event: Button.Pressed) -> None:
         if event.button.id == "back":
             app.pop_screen()

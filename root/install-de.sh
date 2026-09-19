@@ -1,5 +1,13 @@
+#!/bin/bash
+set -Eeuo pipefail
+
+if [[ ! -f /options.json ]]; then
+    echo "Missing /options.json" >&2
+    exit 1
+fi
+
 apt update
-if jq ".DE" "/options.json" | grep -q "KDE Plasma (Heavy)"; then
+if jq -e '.DE == "KDE Plasma (Heavy)"' "/options.json" >/dev/null; then
     DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y dolphin \
     gwenview \
     kde-config-gtk-style \
@@ -20,7 +28,7 @@ if jq ".DE" "/options.json" | grep -q "KDE Plasma (Heavy)"; then
     sed -i 's/applications:org.kde.discover.desktop,/applications:org.kde.konsole.desktop,/g' /usr/share/plasma/plasmoids/org.kde.plasma.taskmanager/contents/config/main.xml
     cp /startwm-kde.sh /defaults/startwm.sh
 fi
-if jq ".DE" "/options.json" | grep -q "XFCE4 (Lightweight)"; then
+if jq -e '.DE == "XFCE4 (Lightweight)"' "/options.json" >/dev/null; then
     DEBIAN_FRONTEND=noninteractive apt-get install --no-install-recommends -y firefox \
     mousepad \
     xfce4-terminal \
@@ -30,7 +38,7 @@ if jq ".DE" "/options.json" | grep -q "XFCE4 (Lightweight)"; then
     rm -f /etc/xdg/autostart/xscreensaver.desktop
     cp /startwm-xfce.sh /defaults/startwm.sh
 fi
-if jq ".DE" "/options.json" | grep -q "I3 (Very Lightweight)"; then
+if jq -e '.DE == "I3 (Very Lightweight)"' "/options.json" >/dev/null; then
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends firefox \
     i3 \
     i3-wm \
@@ -38,7 +46,7 @@ if jq ".DE" "/options.json" | grep -q "I3 (Very Lightweight)"; then
     update-alternatives --set x-terminal-emulator /usr/bin/st
     cp /startwm-i3.sh /defaults/startwm.sh
 fi
-if jq ".DE" "/options.json" | grep -q "GNOME 42 (Very Heavy)"; then
+if jq -e '.DE == "GNOME 42 (Very Heavy)"' "/options.json" >/dev/null; then
     # most of this is taken from udroid (https://github.com/RandomCoderOrg/jammy-gnome/)
     DEBIAN_FRONTEND=noninteractive apt-get install -y firefox
     apt-get install -y gnome-shell \
@@ -97,12 +105,12 @@ if jq ".DE" "/options.json" | grep -q "GNOME 42 (Very Heavy)"; then
     
     cp /startwm-gnome.sh /defaults/startwm.sh
 fi
-if jq ".DE" "/options.json" | grep -q "Cinnamon"; then
+if jq -e '.DE == "Cinnamon"' "/options.json" >/dev/null; then
     DEBIAN_FRONTEND=noninteractive apt-get install -y firefox \
     cinnamon
     cp /startwm-cinnamon.sh /defaults/startwm.sh
 fi
-if jq ".DE" "/options.json" | grep -q "LXQT"; then
+if jq -e '.DE == "LXQT"' "/options.json" >/dev/null; then
     DEBIAN_FRONTEND=noninteractive apt-get install -y firefox
     apt-get install -y lxqt
     cp /startwm-lxqt.sh /defaults/startwm.sh

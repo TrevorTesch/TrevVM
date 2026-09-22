@@ -2,7 +2,7 @@
 
 TrevVM is intended for authorized development, testing, education, accessibility, personal computing, and remote desktop experimentation.
 
-Users must not use TrevVM to:
+You can also use TrevVM to (not recommended):
 
 - Evade school, workplace, network, account, content, or device restrictions.
 - Access systems, data, or services without authorization.

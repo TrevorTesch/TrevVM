@@ -10,3 +10,10 @@ chmod +x install.sh
 
 ## Q&A
 When you successfully run the vm, yes you can install windows files. You can run .exe (ex. install fortnite, obs to stream, etc).
+
+## Cool Add-ons
+
+- Enjoy a panic button at your disposal (press equal key to redirect)
+- No ads or trackers.
+- Real games, the ability to install anything.
+- Hard to block python-feature off 3rd party. (Python and shell scripts rather than html or js that can be detected by school-work blockers.)

@@ -10,3 +10,7 @@ Let the community help! People help People.
 
 ## AI
 When the VM cant function, just ask the AI for help. Issues is a last resort.
+
+## Security Advisory
+
+Private chat with us to discuss the issue.

@@ -1,0 +1,3 @@
+# TrevVM dependencies
+# Python 3.9 or newer is required by Textual
+textual>=0.50.0,<9.0.0

@@ -29,7 +29,7 @@ InstallHead="""
 # TrevVM Installer
 """     
 
-LINES = ["KDE Plasma (Heavy)", "XFCE4 (Lightweight)", "I3 (Very Lightweight)", "GNOME 42 (Very Heavy)", "Cinnamon", "LXQT"]
+LINES = ["KDE Plasma (Heavy)", "XFCE4 (Lightweight)", "I3 (Very Lightweight)", "GNOME 42 (Very Heavy)", "Cinnamon (Average)", "LXQT (Recommended)"]
 
 class InstallScreen(Screen):
     CSS_PATH = "installer.tcss"
@@ -39,7 +39,7 @@ class InstallScreen(Screen):
         yield Markdown(InstallHead)
         yield Horizontal (
         Vertical (
-         Label("Default Apps (you should keep them)"),
+         Label("Default Apps (get all of them)"),
          SelectionList[int]( 
             ("Wine", 0, True),
             ("Chrome", 1, True),

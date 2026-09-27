@@ -1,4 +1,3 @@
-
 (function() {
     const safeSite = 'https://wcpss.instructure.com';
     const panicKeyCode = 'Equal';

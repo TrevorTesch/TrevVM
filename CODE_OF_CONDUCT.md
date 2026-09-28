@@ -4,7 +4,7 @@
 
 We as members, contributors, and maintainers of TrevVM pledge to make participation in this project a welcoming, respectful, and harassment-free experience for everyone, regardless of age, background, identity, experience level, or point of view.
 
-This project is intended for lawful, educational, and authorized use. Users and contributors must respect school, workplace, network, system, and service policies, as well as applicable laws. The project must not be used to bypass access controls, evade security monitoring, disrupt services, access data without permission, or interfere with another person’s systems or accounts.
+This project is intended for lawful, educational, and authorized use. Users and contributors must respect school, workplace, network, system, and service policies, as well as applicable laws. The project must not be used to evade security monitoring, disrupt services, access data without permission, or interfere with another person’s systems or accounts.
 
 ## Expected Behavior
 
@@ -16,7 +16,6 @@ Examples of behavior that contribute to a positive environment include:
 - Respecting different experiences, abilities, identities, and opinions.
 - Clearly documenting reproduction steps, risks, and limitations.
 - Reporting security vulnerabilities privately rather than publicly exposing them.
-- Using the project only on systems and networks where you have explicit authorization.
 
 ## Unacceptable Behavior
 

@@ -4,7 +4,7 @@
 
 We as members, contributors, and maintainers of TrevVM pledge to make participation in this project a welcoming, respectful, and harassment-free experience for everyone, regardless of age, background, identity, experience level, or point of view.
 
-This project is intended for lawful, educational, and authorized use. Users and contributors must respect school, workplace, network, system, and service policies, as well as applicable laws. The project must not be used to evade security monitoring, disrupt services, access data without permission, or interfere with another person’s systems or accounts.
+Users and contributors must respect school, workplace, network, system, and service policies, as well as applicable laws. The project must not be used to evade security monitoring, disrupt services, access data without permission, or interfere with another person’s systems or accounts.
 
 ## Expected Behavior
 

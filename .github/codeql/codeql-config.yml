@@ -1,0 +1,32 @@
+name: TrevVM CodeQL Configuration
+
+# Keep GitHub's default CodeQL queries enabled.
+disable-default-queries: false
+
+# Stronger coverage than the default security suite.
+queries:
+  - uses: security-extended
+
+# Avoid scanning generated or locally installed files.
+paths-ignore:
+  - "**/.git/**"
+  - "**/.github/dependabot.yml"
+  - "**/.venv/**"
+  - "**/venv/**"
+  - "**/env/**"
+  - "**/node_modules/**"
+  - "**/__pycache__/**"
+  - "**/.pytest_cache/**"
+  - "**/build/**"
+  - "**/dist/**"
+  - "**/*.min.js"
+  - "**/*.map"
+
+# Do not suppress individual query results until you have reviewed
+# the alert and confirmed it is a false positive.
+#
+# Example:
+#
+# query-filters:
+#   - exclude:
+#       id: python/example-query-id

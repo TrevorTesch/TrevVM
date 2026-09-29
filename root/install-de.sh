@@ -66,7 +66,7 @@ if jq ".DE" "/options.json" | grep -q "GNOME 42 (Very Heavy)"; then
     # load dconf settings
     if [ -f /jammy.dconf.conf ]; then
         # export dbus session address
-        export $(dbus-launch)
+        eval "$(dbus-launch --sh-syntax)"
 
         dconf load / < /jammy.dconf.conf || {
             echo -e "\t: dconf load failed.."
@@ -75,9 +75,7 @@ if jq ".DE" "/options.json" | grep -q "GNOME 42 (Very Heavy)"; then
         echo -e "\t: dconf file not found.."
     fi
 
-    for file in $(find /usr -type f -iname "*login1*"); do 
-        mv -v $file "$file.back"
-    done
+    find /usr -type f -iname "*login1*" -exec mv -v {} "{}.back" \;
 
     echo "sudo chmod u+s /usr/lib/dbus-1.0/dbus-daemon-launch-helper" >> ~/.bashrc
     echo "sudo chmod u+s /usr/lib/dbus-1.0/dbus-daemon-launch-helper" >> /config/.bashrc

@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "**** install steam ****"
 apt-get update
 apt-get install -y

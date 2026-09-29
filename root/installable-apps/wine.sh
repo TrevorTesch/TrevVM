@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "**** install wine ****"
 dpkg --add-architecture i386
 apt-get update

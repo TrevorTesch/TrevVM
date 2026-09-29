@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "**** Fixing broken dependencies ****"
 apt update
 apt --fix-broken install -y

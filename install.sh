@@ -1,3 +1,4 @@
+#!/bin/bash
 set -e
 
 git clone https://github.com/TrevorTesch/TrevVM
@@ -16,9 +17,9 @@ cp -r TrevVM/root/config/* Save
 
 json_file="TrevVM/options.json"
 if jq ".enablekvm" "$json_file" | grep -q true; then
-    docker run -d --name=TrevVM -e PUID=1000 -e PGID=1000 --device=/dev/kvm --security-opt seccomp=unconfined -e TZ=Etc/UTC -e SUBFOLDER=/ -e TITLE=TrevVM -p 3000:3000 --shm-size="2gb" -v $(pwd)/Save:/config --restart unless-stopped trevvm
+    docker run -d --name=TrevVM -e PUID=1000 -e PGID=1000 --device=/dev/kvm --security-opt seccomp=unconfined -e TZ=Etc/UTC -e SUBFOLDER=/ -e TITLE=TrevVM -p 3000:3000 --shm-size="2gb" -v $(pwd)/Save:/config --restart=always trevvm
 else
-    docker run -d --name=TrevVM -e PUID=1000 -e PGID=1000 --security-opt seccomp=unconfined -e TZ=Etc/UTC -e SUBFOLDER=/ -e TITLE=TrevVM -p 3000:3000 --shm-size="2gb" -v $(pwd)/Save:/config --restart unless-stopped trevvm
+    docker run -d --name=TrevVM -e PUID=1000 -e PGID=1000 --security-opt seccomp=unconfined -e TZ=Etc/UTC -e SUBFOLDER=/ -e TITLE=TrevVM -p 3000:3000 --shm-size="2gb" -v $(pwd)/Save:/config --restart=always trevvm
 fi
 clear
 echo "TrevVM possibly was installed, check port tab. If nothing you ask AI like i did."

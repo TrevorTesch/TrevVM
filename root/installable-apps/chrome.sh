@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "**** install chrome ****"
 apt update
 apt install -y wget

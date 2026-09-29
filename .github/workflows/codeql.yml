@@ -33,6 +33,10 @@ jobs:
             build-mode: none
             category: "/language:python"
 
+            - language: javascript-typescript
+              build-mode: none
+              category: "/language:javascript-typescript"
+              
           - language: actions
             build-mode: none
             category: "/language:actions"

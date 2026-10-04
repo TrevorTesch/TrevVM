@@ -32,6 +32,8 @@ RUN \
 RUN \
   echo "**** cleanup ****" && \
   apt-get autoclean && \
+  apt-get remove -y --purge apt-listchanges xdg-user-dirs man-db && \
+  apt-get autoremove -y --purge && \
   rm -rf \
     /config/.cache \
     /var/lib/apt/lists/* \

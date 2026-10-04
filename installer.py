@@ -39,12 +39,12 @@ class InstallScreen(Screen):
         Vertical (
          Label("Default Apps (get all of them)"),
          SelectionList[int]( 
-            ("Wine", 0, True),
+            ("Wine", 0, False),
             ("Chrome", 1, True),
             ("Xarchiver", 2, True),
-            ("Discord", 3, True),
-            ("Steam", 4, True),
-            ("Minecraft", 5, True),
+            ("Discord", 3, False),
+            ("Steam", 4, False),
+            ("Minecraft", 5, False),
             id="defaultapps"
         ),),
         Vertical (
@@ -70,10 +70,10 @@ class InstallScreen(Screen):
         yield Vertical (
          Horizontal(
             Label("\nDesktop Environement :"),
-            Select(id="de", value="KDE Plasma (Heavy)", options=((line, line) for line in LINES)),
-        ),)
+            Select(id="de", value="LXQT (Recommended)", options=((line, line) for line in LINES)),
+         ),)
         yield Horizontal (
-            Button.error("Back", id="back"),
+             Button.error("Back", id="back"),
             Button.warning("Install NOW", id="in"),
         )
     def on_button_pressed(self, event: Button.Pressed) -> None:
@@ -103,4 +103,3 @@ class InstallApp(App):
 if __name__ == "__main__":
     app = InstallApp()
     app.run()
-

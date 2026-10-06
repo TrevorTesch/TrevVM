@@ -1,5 +1,5 @@
 # TrevVM 🖥 (run this in codespaces)
-#### PANIC KEY IS EQUAL, here at TrevVM we try to make everything simple and easy. 
+#### PANIC KEY IS EQUAL, here at TrevVM we try to make everything simple and easy. This Easy-to-use Linux desktop is great to use for heavily-restricted access to certain things that appear blocked or unavailable.
 ## Installation 🔑
 Make a codespaces by pressing the green code button. Then click Create codespaces on main. When you load this in, type this cmd below:
 ```
@@ -45,10 +45,5 @@ python3 -m pip install -r requirements.txt
 Yes, this is based of a repo called <a href="https://github.com/Blobby-Boi/BlobeVM">BlobeVM</a>. But it isn't actively being edited, or maintained anymore. It's most likely a sitting <b>archive</b> almost. This will have all the good features and be active to the public for future code and development. 
 
 As school progress, so as blockers like GoGuardian, or Lightspeed. Those to name a few, are very good at what they do. Luckily the fact that this is very active, new tactics can be patched and fixed.
-
-
-## !!! 🐱
-
-I'm gonna make a VM that can run windows inside a docker (what this is based off of) codespaces. (Once again.)
 
 

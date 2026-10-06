@@ -19,8 +19,7 @@ When you successfully run the vm, yes you can install windows files. You can run
 - Hard to block python-feature off 3rd party. (Python and shell scripts rather than html or js that can be detected by school-work blockers.)
 
 ## Requirements 🔐
-
-I would assume you need to add some requirements installed, type this in the terminal.
+You need to add some requirements installed, type this in the terminal. (sometimes this isnt pre-installed)
 ```
 pip install -r requirements.txt
 ```

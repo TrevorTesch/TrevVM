@@ -1,5 +1,6 @@
 # TrevVM 🖥 (run this in codespaces)
 #### PANIC KEY IS EQUAL, here at TrevVM we try to make everything simple and easy. This Easy-to-use Linux desktop is great to use for heavily-restricted access to certain things that appear blocked or unavailable. We use pull request to make sure our code is safe, and its very up-to-date. We also use this to test features that can be added sooner in codespaces.
+-----
 ## Installation 🔑
 Make a codespaces by pressing the green code button. Then click Create codespaces on main. When you load this in, type this cmd below:
 ```

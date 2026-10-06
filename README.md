@@ -1,8 +1,7 @@
 # TrevVM 🖥 (run this in codespaces)
-#### PANIC KEY IS EQUAL
+#### PANIC KEY IS EQUAL, here at TrevVM we try to make everything simple and easy. 
 ## Installation 🔑
-First start a new blank codespace by going to https://github.com/codespaces/ and choosing the "Blank" template.
-Then copy and paste this command in your codespace terminal and hit enter.
+Make a codespaces by pressing the green code button. Then click Create codespaces on main. When you load this in, type this cmd below:
 ```
 curl -O https://raw.githubusercontent.com/TrevorTesch/TrevVM/main/install.sh
 chmod +x install.sh

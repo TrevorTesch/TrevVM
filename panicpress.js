@@ -1,5 +1,5 @@
 (function() {
-    const safeSite = 'https://wcpss.instructure.com';
+    const safeSite = 'https://google.com';
     const panicKeyCode = 'Equal';
 
     function redirectToSafeSite() {
@@ -12,6 +12,6 @@
             redirectToSafeSite();
         }
     });
-
+ //Code adapted from ramazing
     console.log('Panic key active: Press the equal key to hide this page.');
 })();

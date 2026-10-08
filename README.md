@@ -2,7 +2,7 @@
 
 
 
-# TrevVM 🖥 (run this in codespaces)
+# TrevVM 🖥 (run this in a deployed enviroment)
 #### PANIC KEY IS EQUAL, here at TrevVM we try to make everything simple and easy. This Easy-to-use Linux desktop is great to use for heavily-restricted access to certain things that appear blocked or unavailable. We use pull request to make sure our code is safe, and its very up-to-date. We also use this to test features that can be added sooner in codespaces.
 -----
 ## Installation 🔑
@@ -14,7 +14,7 @@ chmod +x install.sh
 ```
 <b>NOTE: GO TO THE TREVM WIKI FOR INSTALLATION. WIKI SHOWCASES HOW TO INSTALL PROPERLY.</b>
 ## Q&A 📢
-When you successfully run the vm, yes you can install windows files. You can run .exe (ex. install fortnite, obs to stream, etc).
+When you successfully run the vm, yes you can install windows files. You can run .exe (ex. install fortnite, obs to stream, etc). You can ask any more in discussions tab.
 
 ## Cool Add-ons 📜
 

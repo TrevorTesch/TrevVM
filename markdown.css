@@ -1,0 +1,145 @@
+/* ==========================================================================
+   1. GLOBAL VARIABLES & RESET
+   ========================================================================== */
+:root {
+  --bg-primary: #121214;
+  --bg-surface: #1e1e24;
+  --text-main: #f5f5f7;
+  --text-muted: #a0a0a5;
+  --accent-color: #0071e3;
+  --accent-hover: #0077ed;
+  --border-color: #2c2c35;
+  --max-width: 1000px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding-top: 80px; /* Leaves space for fixed navigation bar */
+}
+
+/* ==========================================================================
+   2. NAVIGATION BAR
+   ========================================================================== */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(30, 30, 36, 0.85);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-color);
+  z-index: 1000;
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--accent-color);
+}
+
+/* ==========================================================================
+   3. LAYOUT & CONTAINERS
+   ========================================================================== */
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: calc(100vh - 200px);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h1 {
+  margin-bottom: 80px;
+  font-weight: 800;
+}
+
+h2 {
+  margin-bottom: 60px
+    font-weight: 600;
+}
+
+h3 {
+  margin-bottom: 40px
+    font-weight: 400
+}
+
+h4 {
+  margin-bottom: 20px
+    font-weight: 200
+
+h1 { font-size: 2.5rem; color: var(--text-main); }
+h2 { font-size: 1.8rem; border-bottom: 2px solid var(--border-color); padding-bottom: 8px; }
+
+p {
+  color: var(--text-muted);
+  margin-bottom: 15px;
+}
+
+/* ==========================================================================
+   4. INTERACTIVE BUTTONS & CARDS
+   ========================================================================== */
+.btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+/* Project Grid & Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+}

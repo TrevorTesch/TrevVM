@@ -1,8 +1,7 @@
 <img src="./main.png" alt="TrevVM logo" width="120">
 
 
-
-# TrevVM 🖥 (run this in a deployed environment)
+# $\color{#ff6600}{\textsf{TrevVM}}$ 🖥 (run this in a deployed environment)
 #### PANIC KEY IS EQUAL 
 
 Here at TrevVM we try to make everything simple and easy. This Easy-to-use Linux desktop is great to use for <b>heavily-restricted</b> access to certain things that appear blocked or unavailable. We use pull requests to make sure our code is safe, commit the changes on branches, and it's very up-to-date. 

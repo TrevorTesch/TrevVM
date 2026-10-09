@@ -1,9 +1,13 @@
 <img src="./main.png" alt="TrevVM logo" width="120">
 
 
+# $\color{#0B1F4B}{\textsf{Trev}}\color{#66C7F2}{\textsf{VM}}$ 🖥 (run this in a deployed environment)
+#### PANIC KEY IS EQUAL 
 
-# TrevVM 🖥 (run this in a deployed enviroment)
-#### PANIC KEY IS EQUAL, here at TrevVM we try to make everything simple and easy. This Easy-to-use Linux desktop is great to use for heavily-restricted access to certain things that appear blocked or unavailable. We use pull request to make sure our code is safe, and its very up-to-date. We also use this to test features that can be added sooner in codespaces.
+Here at TrevVM we try to make everything simple and easy. This Easy-to-use Linux desktop is great to use for <b>heavily-restricted</b> access to certain things that appear blocked or unavailable. We use pull requests to make sure our code is safe, commit the changes on branches, and it's very up-to-date. 
+
+<b>We also use this to test features that can be added sooner in codespaces.</b>
+
 -----
 ## Installation 🔑
 Make a codespaces by pressing the green code button. Then click Create codespaces on main. When you load this in, type this cmd below:

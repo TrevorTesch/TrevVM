@@ -17,17 +17,17 @@ Head="""
 > TrevVM (Powered by Linux - Codespaces)
 
 TrevVM is a Virtual Machine that...
-* Runs entirely in a web browser
-* Is unblocked
+* Linux-Ran software
+* KasmVNC Software
 * Has Windows app support
 * Has audio support
-* Can Bypass School Network
+* Can be ran on a deployed environment
 """
 InstallHead="""
 # TrevVM Installer
 """     
 
-LINES = ["KDE Plasma (Heavy)", "XFCE4 (Lightweight)", "I3 (Very Lightweight)", "GNOME 42 (Very Heavy)", "Cinnamon (Average)", "LXQT (Recommended)"]
+LINES = ["KDE Plasma (Heavy)", "XFCE4 (Lightweight)", "I3 (Very Lightweight)", "GNOME 42 (Very Heavy)", "Cinnamon (Average)", "LXQT (Broken)"]
 
 class InstallScreen(Screen):
     CSS_PATH = "installer.tcss"

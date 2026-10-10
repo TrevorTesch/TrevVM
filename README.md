@@ -10,7 +10,7 @@ Here at TrevVM we try to make everything simple and easy. This Easy-to-use Linux
 
 -----
 ## Installation 🔑
-Make a codespaces by pressing the green code button. Then click Create codespaces on main. When you load this in, type this cmd below:
+Make a codespaces by pressing the green code button. Then click Create codespaces on main. When you load the codespace in, type this cmd that is below in the terminal:
 ```
 curl -O https://raw.githubusercontent.com/TrevorTesch/TrevVM/main/install.sh
 chmod +x install.sh
@@ -18,7 +18,7 @@ chmod +x install.sh
 ```
 <b>NOTE: GO TO THE TREVM WIKI FOR INSTALLATION. WIKI SHOWCASES HOW TO INSTALL PROPERLY.</b>
 ## Q&A 📢
-When you successfully run the vm, yes you can install windows files. You can run .exe (ex. install fortnite, obs to stream, etc). You can ask any more in discussions tab.
+When you successfully run the vm, you can install windows files. You can run .exe (ex. install fortnite, obs to stream, etc). You can ask any more Questions in discussions tab.
 
 ## Cool Add-ons 📜
 
@@ -45,8 +45,7 @@ python3 -m pip install -r requirements.txt
 
 #### I'm sure some of y'all can get confused from all the stuff that works here, we will try to explain and have easy access on our page wiki to make things easier. It can make things get clearer for any questions.
 
-> ### NOTE: These files are subject to changes, so if you still have any questions, you can email at my page on github <a href="https://github.com/trevortesch">here</a>. 
-
+> ### NOTE: These files are subject to changes, so if you still have any questions, go to discussions or issues.
 
 ## Fork ♾️
 

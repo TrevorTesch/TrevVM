@@ -54,4 +54,7 @@ Yes, this is based of a repo called <a href="https://github.com/Blobby-Boi/Blobe
 
 As school progress, so as blockers like GoGuardian, or Lightspeed. Those to name a few, are very good at what they do. Luckily the fact that this is very active, new tactics can be patched and fixed.
 
+###### (C) 2026-present <a href="https://github.com/TrevorTesch/TrevVM/">TrevVM</a> and its contributors. Always follow the rules and policies of the repo before making/create anything to/from the repo.
+
+
 

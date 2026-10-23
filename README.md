@@ -26,20 +26,6 @@ When you successfully run the vm, you can install windows files. You can run .ex
 - Real games, the ability to install anything. (ex. any exe that can be ran on windows)
 - Hard to block python-feature off 3rd party. (Python and shell scripts rather than html or js that can be detected by school-work blockers.)
 
-## Requirements 🔐
-You need to add some requirements installed, type this in the terminal. (sometimes this isnt pre-installed)
-```
-pip install -r requirements.txt
-```
-Or these
-```
-python -m pip install -r requirements.txt
-```
-Or this
-```
-python3 -m pip install -r requirements.txt
-```
-
 ## Wiki 🗳️
 
 #### I'm sure some of y'all can get confused from all the stuff that works here, we will try to explain and have easy access on our page wiki to make things easier. It can make things get clearer for any questions.

@@ -1,5 +1,18 @@
 set -e
 
+WORKSPACE="$(pwd)"
+
+show_fallback() {
+  mkdir -p "$WORKSPACE/.trevvm-fallback"
+  cp "$WORKSPACE/TrevVM/fallback.html" \
+     "$WORKSPACE/.trevvm-fallback/index.html"
+
+  echo "Docker failed. Open port 3001 in the Codespaces Ports panel."
+  exec python3 -m http.server 3001 \
+    --bind 0.0.0.0 \
+    --directory "$WORKSPACE/.trevvm-fallback"
+}
+
 git clone https://github.com/TrevorTesch/TrevVM
 cd TrevVM
 python3 -m pip install -r requirements.txt

@@ -10,3 +10,6 @@ async function syncLocalToRemote() {
     console.warn('Clipboard read permission denied');
   }
 }
+
+// Poll clipboard on window focus
+window.addEventListener('focus', syncLocalToRemote);

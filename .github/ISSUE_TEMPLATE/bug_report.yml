@@ -10,8 +10,6 @@ body:
         If you are a maintainer, please be aware of making a blank issue (in case) is an option.
         If the issue is still present after 2 days after being reviewed, someone will have to reach out to you explaining what happened and when it will          be resolved.
       options:
-        - label: I verified that this is not a filter list issue. Report any issues with filter lists or broken website functionality by using the _chat_ icon in the popup panel.
-          required: true
         - label: This is **NOT** a KasnVNC report. We are not a maintaining team regarding KasmVNC.
           required: true
         - label: This is not a support issue or a question. For support, questions, or help, visit our discussions

@@ -1,5 +1,5 @@
 name: Divided by 0 Error?
-description: 'File a bug report with the extension itself. Do NOT report issues with school blockers (such as: Securly, Lightspeed, etc) in this repository.'
+description: 'File a bug report regarding TrevVM. Do NOT report issues with school blockers (such as: Securly, Lightspeed, etc) in this repository.'
 body:
   - type: checkboxes
     attributes:

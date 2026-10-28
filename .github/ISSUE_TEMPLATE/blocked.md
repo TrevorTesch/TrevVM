@@ -16,3 +16,5 @@ Please describe the school/work blocker.
 
 ## What happened exactly
 Describe the outcome. Did the tab close for example?
+
+#### NOTE: YOU MUST KEEP THIS TEMPLATE IN YOUR ISSUE, OR ELSE IT WILL BE CLOSED.
